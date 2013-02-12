@@ -1,7 +1,7 @@
 hello:hello.o
-	$(CC) $(LDFLAGS) hello.o -o hello
+	$(CXX) $(LDFLAGS) hello.o -o hello
 hello.o:hello.cpp
-	$(CC) $(CXXFLAGS) -c hello.c
+	$(CXX) $(CXXFLAGS) -c hello.cpp
 
 
 # remove object files and executable when user executes "make clean"
